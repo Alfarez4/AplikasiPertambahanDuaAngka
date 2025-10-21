@@ -21,55 +21,55 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
         setLocationRelativeTo(null);
 
         // Menambahkan placeholder pada TextField1
-        jTextField1.setText("Masukkan Angka 1");
-        jTextField1.setForeground(Color.GRAY);
+        jTextAngka1.setText("Masukkan Angka 1");
+        jTextAngka1.setForeground(Color.GRAY);
 
         // Menangani focus masuk dan keluar
-        jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
+        jTextAngka1.addFocusListener(new java.awt.event.FocusAdapter() {
             @Override
             public void focusGained(java.awt.event.FocusEvent evt) {
-                if (jTextField1.getForeground().equals(Color.GRAY) &&
-                jTextField1.getText().equals("Masukkan Angka 1")) {
-                jTextField1.setText("");
-                jTextField1.setForeground(Color.BLACK);
+                if (jTextAngka1.getForeground().equals(Color.GRAY) &&
+                jTextAngka1.getText().equals("Masukkan Angka 1")) {
+                jTextAngka1.setText("");
+                jTextAngka1.setForeground(Color.BLACK);
             }
         }
 
             @Override
             public void focusLost(java.awt.event.FocusEvent evt) {
-                if (jTextField1.getText().isEmpty()) {
-                    jTextField1.setText("Masukkan Angka 1");
-                 jTextField1.setForeground(Color.GRAY);
+                if (jTextAngka1.getText().isEmpty()) {
+                    jTextAngka1.setText("Masukkan Angka 1");
+                 jTextAngka1.setForeground(Color.GRAY);
                 }
             }
         });
-        jTextField2.setText("Masukkan Angka 2");
-        jTextField2.setForeground(Color.GRAY);
+        jTextFieldAngka2.setText("Masukkan Angka 2");
+        jTextFieldAngka2.setForeground(Color.GRAY);
 
-        jTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
+        jTextFieldAngka2.addFocusListener(new java.awt.event.FocusAdapter() {
             @Override
             public void focusGained(java.awt.event.FocusEvent evt) {
-                if (jTextField2.getText().equals("Masukkan Angka 2")) {
-                    jTextField2.setText("");
-                    jTextField2.setForeground(Color.BLACK);
+                if (jTextFieldAngka2.getText().equals("Masukkan Angka 2")) {
+                    jTextFieldAngka2.setText("");
+                    jTextFieldAngka2.setForeground(Color.BLACK);
                 }
             }
 
             @Override
             public void focusLost(java.awt.event.FocusEvent evt) {
-                if (jTextField2.getText().isEmpty()) {
-                    jTextField2.setText("Masukkan Angka 2");
-                    jTextField2.setForeground(Color.GRAY);
+                if (jTextFieldAngka2.getText().isEmpty()) {
+                    jTextFieldAngka2.setText("Masukkan Angka 2");
+                    jTextFieldAngka2.setForeground(Color.GRAY);
                 }
             }
         });
-        jTextField3.setText("Hasil Penjumlahan Akan Muncul Di Sini");
-        jTextField3.setForeground(Color.GRAY);
-        jTextField3.setEditable(false); // hasil tidak bisa diketik
+        jTextFieldHasil.setText("Hasil Penjumlahan Akan Muncul Di Sini");
+        jTextFieldHasil.setForeground(Color.GRAY);
+        jTextFieldHasil.setEditable(false); // hasil tidak bisa diketik
         
         java.awt.EventQueue.invokeLater(() -> {
-            jPanel1.setFocusable(true);
-            jPanel1.requestFocusInWindow();
+            jPanelTbhAngka.setFocusable(true);
+            jPanelTbhAngka.requestFocusInWindow();
         });
     }
 
@@ -82,151 +82,152 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jPanelTbhAngka = new javax.swing.JPanel();
+        jLabelAngka1 = new javax.swing.JLabel();
+        jTextAngka1 = new javax.swing.JTextField();
+        jLabelAngka2 = new javax.swing.JLabel();
+        jTextFieldAngka2 = new javax.swing.JTextField();
+        jLabelHasil = new javax.swing.JLabel();
+        jTextFieldHasil = new javax.swing.JTextField();
+        jButtonTambah = new javax.swing.JButton();
+        jButtonHapus = new javax.swing.JButton();
+        jButtonKeluar = new javax.swing.JButton();
+        jLabelAplikasi = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Aplikasi Pertambahan Dua Angka");
         setBackground(new java.awt.Color(0, 0, 0));
         setSize(new java.awt.Dimension(100, 80));
 
-        jPanel1.setBackground(new java.awt.Color(52, 73, 94));
-        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
+        jPanelTbhAngka.setBackground(new java.awt.Color(52, 73, 94));
+        jPanelTbhAngka.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanelTbhAngka.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("ANGKA 1");
-        jLabel2.setName(""); // NOI18N
+        jLabelAngka1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabelAngka1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelAngka1.setText("ANGKA 1");
+        jLabelAngka1.setName(""); // NOI18N
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        jTextAngka1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                jTextAngka1ActionPerformed(evt);
             }
         });
-        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextAngka1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                jTextField1KeyTyped(evt);
+                jTextAngka1KeyTyped(evt);
             }
         });
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("ANGKA 2");
+        jLabelAngka2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelAngka2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabelAngka2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelAngka2.setText("ANGKA 2");
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldAngka2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                jTextFieldAngka2ActionPerformed(evt);
             }
         });
-        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextFieldAngka2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                jTextField2KeyTyped(evt);
+                jTextFieldAngka2KeyTyped(evt);
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("HASIL");
+        jLabelHasil.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabelHasil.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelHasil.setText("HASIL");
 
-        jTextField3.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextFieldHasil.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                jTextField3KeyTyped(evt);
+                jTextFieldHasilKeyTyped(evt);
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(39, 174, 96));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("TAMBAH");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonTambah.setBackground(new java.awt.Color(39, 174, 96));
+        jButtonTambah.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButtonTambah.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonTambah.setText("TAMBAH");
+        jButtonTambah.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButtonTambahActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(241, 196, 15));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton3.setText("HAPUS");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jButtonHapus.setBackground(new java.awt.Color(241, 196, 15));
+        jButtonHapus.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButtonHapus.setText("HAPUS");
+        jButtonHapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jButtonHapusActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(255, 51, 51));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("KELUAR");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jButtonKeluar.setBackground(new java.awt.Color(255, 51, 51));
+        jButtonKeluar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButtonKeluar.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonKeluar.setText("KELUAR");
+        jButtonKeluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jButtonKeluarActionPerformed(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("APLIKASI PERTAMBAHAN DUA ANGKA");
+        jLabelAplikasi.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabelAplikasi.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelAplikasi.setText("APLIKASI PERTAMBAHAN DUA ANGKA");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanelTbhAngkaLayout = new javax.swing.GroupLayout(jPanelTbhAngka);
+        jPanelTbhAngka.setLayout(jPanelTbhAngkaLayout);
+        jPanelTbhAngkaLayout.setHorizontalGroup(
+            jPanelTbhAngkaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelTbhAngkaLayout.createSequentialGroup()
+                .addGroup(jPanelTbhAngkaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelTbhAngkaLayout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanelTbhAngkaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelAngka2)
+                            .addComponent(jLabelAngka1)
+                            .addComponent(jLabelHasil, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton1)
+                        .addGroup(jPanelTbhAngkaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextAngka1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jTextFieldAngka2, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jTextFieldHasil, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanelTbhAngkaLayout.createSequentialGroup()
+                                .addComponent(jButtonTambah)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButtonHapus, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jButtonKeluar, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanelTbhAngkaLayout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jLabel1)))
+                        .addComponent(jLabelAplikasi)))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        jPanelTbhAngkaLayout.setVerticalGroup(
+            jPanelTbhAngkaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelTbhAngkaLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabel1)
+                .addComponent(jLabelAplikasi)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelTbhAngkaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelAngka1)
+                    .addComponent(jTextAngka1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelTbhAngkaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelAngka2)
+                    .addComponent(jTextFieldAngka2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelTbhAngkaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelHasil)
+                    .addComponent(jTextFieldHasil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2))
+                .addGroup(jPanelTbhAngkaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonTambah)
+                    .addComponent(jButtonHapus)
+                    .addComponent(jButtonKeluar))
                 .addGap(20, 20, 20))
         );
 
@@ -236,25 +237,25 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelTbhAngka, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelTbhAngka, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jTextAngka1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextAngka1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_jTextAngka1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButtonKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonKeluarActionPerformed
         // TODO add your handling code here:
         int pilihan = JOptionPane.showConfirmDialog(
         this,
@@ -270,46 +271,46 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
     } else {
         // jika memilih "Tidak", tidak melakukan apa-apa
     }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButtonKeluarActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButtonHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonHapusActionPerformed
                 // TODO add your handling code here:
-                jTextField1.setText("Masukkan Angka 1");
-                jTextField1.setForeground(Color.GRAY);
-                jTextField2.setText("Masukkan Angka 2");
-                jTextField2.setForeground(Color.GRAY);
-                jTextField3.setText("Hasil Penjumlahan Akan Muncul Di Sini");
-                jTextField3.setForeground(Color.GRAY);
-                jTextField1.requestFocus();
-    }//GEN-LAST:event_jButton3ActionPerformed
+                jTextAngka1.setText("Masukkan Angka 1");
+                jTextAngka1.setForeground(Color.GRAY);
+                jTextFieldAngka2.setText("Masukkan Angka 2");
+                jTextFieldAngka2.setForeground(Color.GRAY);
+                jTextFieldHasil.setText("Hasil Penjumlahan Akan Muncul Di Sini");
+                jTextFieldHasil.setForeground(Color.GRAY);
+                jTextAngka1.requestFocus();
+    }//GEN-LAST:event_jButtonHapusActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTambahActionPerformed
         try {
-            double angka1 = Double.parseDouble(jTextField1.getText());
-            double angka2 = Double.parseDouble(jTextField2.getText());
+            double angka1 = Double.parseDouble(jTextAngka1.getText());
+            double angka2 = Double.parseDouble(jTextFieldAngka2.getText());
             double hasil = angka1 + angka2;
-               jTextField3.setText(String.valueOf(hasil));
-               jTextField3.setForeground(Color.BLACK);
+               jTextFieldHasil.setText(String.valueOf(hasil));
+               jTextFieldHasil.setForeground(Color.BLACK);
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Masukkan angka yang valid!",
             "Error", JOptionPane.ERROR_MESSAGE);
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonTambahActionPerformed
 }
-    private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
+    private void jTextAngka1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextAngka1KeyTyped
         // TODO add your handling code here:
         char c = evt.getKeyChar();
         if (!Character.isDigit(c) && c != '.') {
         evt.consume(); // Menolak input non-angka
 }
-    }//GEN-LAST:event_jTextField1KeyTyped
+    }//GEN-LAST:event_jTextAngka1KeyTyped
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void jTextFieldAngka2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldAngka2ActionPerformed
         // TODO add your handling code here:
         
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_jTextFieldAngka2ActionPerformed
 
-    private void jTextField2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyTyped
+    private void jTextFieldAngka2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldAngka2KeyTyped
         // TODO add your handling code here:
         {                                     
         // TODO add your handling code here:
@@ -318,14 +319,14 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
         evt.consume(); // Menolak input non-angka
 }
     }                              
-    }//GEN-LAST:event_jTextField2KeyTyped
+    }//GEN-LAST:event_jTextFieldAngka2KeyTyped
 
-    private void jTextField3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField3KeyTyped
+    private void jTextFieldHasilKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldHasilKeyTyped
         // TODO add your handling code here:
         char c = evt.getKeyChar();
         if (!Character.isDigit(c) && c != '.') {
         evt.consume(); // Menolak input non-angka
-    }//GEN-LAST:event_jTextField3KeyTyped
+    }//GEN-LAST:event_jTextFieldHasilKeyTyped
     }
 
     /**
@@ -364,16 +365,16 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JButton jButtonHapus;
+    private javax.swing.JButton jButtonKeluar;
+    private javax.swing.JButton jButtonTambah;
+    private javax.swing.JLabel jLabelAngka1;
+    private javax.swing.JLabel jLabelAngka2;
+    private javax.swing.JLabel jLabelAplikasi;
+    private javax.swing.JLabel jLabelHasil;
+    private javax.swing.JPanel jPanelTbhAngka;
+    private javax.swing.JTextField jTextAngka1;
+    private javax.swing.JTextField jTextFieldAngka2;
+    private javax.swing.JTextField jTextFieldHasil;
     // End of variables declaration//GEN-END:variables
 }
